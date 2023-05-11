@@ -1,0 +1,138 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+
+  html{
+    font-size: 62.5%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  :root{
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --light-grey: hsl(0, 0%, 95%);
+
+    --ff-Lexend-Deca: 'Lexend Deca', sans-serif;
+    --ff-Big-Shoulders-Display: 'Big Shoulders Display', serif;
+
+  }
+  
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--light-grey);
+}
+
+h1{
+    color: var(--light-grey);
+    font-family: var(--ff-Big-Shoulders-Display);
+    font-size: 3.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: .5em 0 ;
+}
+
+p{
+    color: var(--transparent-white);
+    font-family: var(--ff-Lexend-Deca);
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-bottom: 4em;
+}
+
+.button{
+    background-color: var(--light-grey);
+    font-family: var(--ff-Lexend-Deca);
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.button:hover {
+    border: 2px solid var(--light-grey);
+    color: var(--light-grey);
+    background-color: transparent;
+}
+
+.container{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 1em;
+    overflow: hidden;
+}
+section{
+    padding: 6em;
+}
+
+.sedan{
+    background-color: var(--orange);
+}
+
+.suvs{
+    background-color: var(--cyan);
+}
+
+.luxury{
+    background-color: var(--dark-cyan);
+}
+
+.orange-color{
+    color: var(--orange);
+}
+
+.cyan-color{
+   color: var(--cyan);
+}
+
+.dark-cyan-color{
+    color: var(--dark-cyan);
+}
+
+@media (max-width:860px){
+  
+    body{
+        display: block;
+    }
+   
+    .container{
+        flex-direction: column;  
+        margin: 2em;
+    }
+
+}
+
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+    margin-top: 3em;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
